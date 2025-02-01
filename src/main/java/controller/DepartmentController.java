@@ -29,8 +29,8 @@ public class DepartmentController {
 	
 	public Department adddepartment(@RequestBody Department department)
 	{
-		Department dept = departmentrepository.adddepartment(department);
-		return dept;
+		Department dept1 = departmentrepository.adddepartment(department);
+		return dept1;
 	}
 	@GetMapping
 	public List<?> getall()
