@@ -30,6 +30,7 @@ public class DepartmentController {
 	@PostMapping("/add")
 	public Department adddepartment(@RequestBody Department department)
 	{
+		logger.info("adding department " + department);
 		Department dept2 = departmentrepository.adddepartment(department);
 		return dept2;
 	}
