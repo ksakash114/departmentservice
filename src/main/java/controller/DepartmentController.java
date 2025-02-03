@@ -49,6 +49,7 @@ public class DepartmentController {
 	public Department getbyid(@PathVariable Long id)
 	{
 		logger.info("department find by id", id);
+		System.out.println("getdepartment by id");
 		return departmentrepository.findById(id);
 	}
 }
