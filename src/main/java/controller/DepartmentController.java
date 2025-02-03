@@ -30,6 +30,8 @@ public class DepartmentController {
 	@PostMapping("/add")
 	public Department adddepartment(@RequestBody Department department)
 	{
+		logger.info("Department add", department);
+		System.out.println("department");
 		Department dept2 = departmentrepository.adddepartment(department);
 		return dept2;
 	}
@@ -38,6 +40,7 @@ public class DepartmentController {
 	public List<?> getall()
 	{
 		logger.info("Department find");
+		System.out.println("all department");
 		return departmentrepository.findAll();
 	}
 	
@@ -46,6 +49,7 @@ public class DepartmentController {
 	public Department getbyid(@PathVariable Long id)
 	{
 		logger.info("department find by id", id);
+		System.out.println("getdepartment by id");
 		return departmentrepository.findById(id);
 	}
 }
