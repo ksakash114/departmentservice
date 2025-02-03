@@ -40,6 +40,7 @@ public class DepartmentController {
 	public List<?> getall()
 	{
 		logger.info("Department find");
+		System.out.println("all department");
 		return departmentrepository.findAll();
 	}
 	
