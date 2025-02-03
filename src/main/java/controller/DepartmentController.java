@@ -31,6 +31,7 @@ public class DepartmentController {
 	public Department adddepartment(@RequestBody Department department)
 	{
 		logger.info("Department add", department);
+		System.out.println("department");
 		Department dept2 = departmentrepository.adddepartment(department);
 		return dept2;
 	}
