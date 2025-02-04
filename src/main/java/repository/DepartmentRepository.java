@@ -16,6 +16,7 @@ public class DepartmentRepository {
 	
 	public Department adddepartment(Department department)
 	{
+		System.out.println(1);
 		departments.add(department);
 		return department;
 	}
