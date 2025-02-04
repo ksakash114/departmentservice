@@ -22,7 +22,7 @@ public class DepartmentRepository {
 	
 	public Department findById(Long id)
 	{
-		return departments.stream().filter(department -> department.getId().equals(id)).findFirst().orElseThrow();
+		return departments.stream().filter(dep -> dep.getId().equals(id)).findFirst().orElseThrow();
 	}
 	
 	public List<Department> findAll()
